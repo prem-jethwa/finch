@@ -1,0 +1,28 @@
+.main-section {
+  width: 100%;
+  border-top: var(--primary-border);
+  border-right: var(--primary-border);
+  margin-bottom: 2em;
+}
+.sub-header {
+  display: flex;
+  max-width: calc(100% - 4rem);
+  width: 100%;
+  padding: 2em;
+  justify-content: space-between;
+}
+
+.sub-header__sort-btn {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background: var(--primary-white);
+}
+
+.main-section__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-content: center;
+  align-items: center;
+  margin: 0 2em;
+  gap: 2em;
+}

@@ -1,0 +1,90 @@
+.filter-sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: 100%;
+  border: var(--primary-border);
+  min-height: calc(100vh - 7.5em);
+  height: 100%;
+}
+
+/* Categories */
+
+.filter-sidebar__categories {
+  max-width: 350px;
+  width: 100%;
+}
+
+.filter-sidebar__categories-dropdown {
+  padding: 2em;
+  /* width: 100%; */
+  border-bottom: var(--primary-border);
+}
+
+.filter-sidebar__categories-list {
+  padding: 0 0 0 2em;
+}
+
+.filter-sidebar__categories-item {
+  margin: 1em 0;
+}
+
+.filter-sidebar__categories-item label {
+  margin-left: 1em;
+}
+
+/* Range Slider */
+
+.filter-sidebar__range {
+  width: 100%;
+}
+
+.filter-sidebar__range-headline {
+  padding: 2em;
+  /* width: 100%; */
+  border-top: var(--primary-border);
+}
+
+.filter-sidebar__range-inputs {
+  width: 100%;
+  margin: auto;
+  justify-self: center;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.filter-sidebar__range-inputs output {
+  margin: auto 0.5em;
+}
+
+.filter-sidebar__range input {
+  max-width: 100px;
+}
+
+.filter-sidebar__range-start {
+  transform: rotate(180deg);
+  margin-right: -0.5em;
+}
+
+/* Shoe Size */
+
+.filter-sidebar__sizes-headline {
+  padding: 2em;
+  /* width: 100%; */
+  border-top: var(--primary-border);
+}
+
+.filter-sidebar__sizes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  margin: 0 2em;
+  gap: 1em;
+}
+
+.filter-sidebar__sizes-grid span {
+  cursor: pointer;
+  border: var(--primary-border);
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
