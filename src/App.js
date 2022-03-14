@@ -4,7 +4,14 @@ import MainContainer from "./components/container/MainContainer";
 import { useState } from "react";
 
 function App(props) {
-  const [ctxValue, setCtxValue] = useState({});
+  const [ctxValue, setCtxValue] = useState({
+    searchQuery: "",
+    selectedCategory: [],
+    minPrice: 10,
+    maxPrice: 800,
+    selectedShoeSize: [],
+    sortByPrice: "",
+  });
 
   const handleSearchQueryChange = (e) => {
     setCtxValue({ ...ctxValue, searchQuery: e.target.value });

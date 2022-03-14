@@ -5,14 +5,7 @@ import classes from "./mainContainer.module.css";
 import { useEffect, useState } from "react";
 
 function MainContainer({ onFilterChange }) {
-  const [filteredObj, setFilteredObj] = useState({
-    searchQuery: "",
-    selectedCategory: [],
-    minPrice: 10,
-    maxPrice: 800,
-    selectedShoeSize: [],
-    sortByPrice: "",
-  });
+  const [filteredObj, setFilteredObj] = useState({});
 
   useEffect(() => {
     onFilterChange(filteredObj);
@@ -30,10 +23,7 @@ function MainContainer({ onFilterChange }) {
         shoeSizes={[30, 40, 50]}
         onFilterSideBarChange={handleFilterChange}
       />
-      <MainSection
-        onSortByPriceChange={handleFilterChange}
-        onFilterChange={onFilterChange}
-      />
+      <MainSection onSortByPriceChange={handleFilterChange} />
     </div>
   );
 }
