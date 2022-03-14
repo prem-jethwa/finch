@@ -102,7 +102,7 @@ function FilterSideBar(props) {
                 onClick={handleFilterClick.bind(this, shoeSize, "shoeSize")}
                 style={{
                   background: selectedShoeSize.includes(shoeSize)
-                    ? "var(--primary-gray)"
+                    ? "var(--primary-white)"
                     : "",
                 }}
               >

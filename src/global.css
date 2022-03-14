@@ -6,11 +6,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(206, 205, 205);
+  background-color: rgb(216, 216, 216);
 
-  --primary-gray: #aeaeae;
-  --primary-white: rgb(223, 223, 223);
-  --primary-border: 1px solid var(--primary-gray);
+  --primary-gray: #767676;
+  --primary-white: rgb(242, 242, 242);
+  --primary-border: 1px solid #bab8b8;
   --primary-padding: 2em;
 }
 
