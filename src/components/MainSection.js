@@ -65,6 +65,7 @@ function MainSection({ onSortByPriceChange }) {
   const ctx = useContext(FilterContext);
   const [filteredContent, setFilteredContent] = useState(shoesContent);
   const [selectedSortOrder, setSelectedSortOrder] = useState("");
+  // const [counter, setCounter] = useState(0);
 
   const filterByOrder = (filteredCnt) => {
     if (!selectedSortOrder) return filteredCnt;
@@ -103,9 +104,15 @@ function MainSection({ onSortByPriceChange }) {
     return filterByOrder(filteredCnt);
   };
 
-  useEffect(async () => {
-    setFilteredContent([...getFilteredContent()]);
-  }, [ctx, selectedSortOrder]);
+  useEffect(() => {
+    let renderTimeout = setTimeout(() => {
+      setFilteredContent([...getFilteredContent()]);
+      // setCounter(counter + 1);
+      // console.log(`>> ctxValue ${counter}:`, ctx);
+    }, 500);
+
+    return () => clearTimeout(renderTimeout);
+  }, [ctx]);
 
   return (
     <main className={classes["main-section"]}>

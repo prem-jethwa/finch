@@ -14,7 +14,6 @@ function App(props) {
     setCtxValue({ ...ctxValue, ...filteredObj });
   };
 
-  console.log(">> ctxValue:", ctxValue);
   return (
     <FilterContext.Provider value={ctxValue}>
       <div className="App" {...props}>
