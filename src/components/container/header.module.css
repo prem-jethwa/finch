@@ -1,6 +1,6 @@
 .search-header {
   display: flex;
-  padding: 2em 2em;
+  padding: var(--primary-padding) var(--primary-padding);
   justify-content: space-between;
   /* border-bottom: var(--primary-border); */
   border-left: var(--primary-border);

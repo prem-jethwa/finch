@@ -11,6 +11,7 @@ body {
   --primary-gray: #aeaeae;
   --primary-white: rgb(223, 223, 223);
   --primary-border: 1px solid var(--primary-gray);
+  --primary-padding: 2em;
 }
 
 code {
@@ -42,4 +43,13 @@ h3 {
   text-decoration: none;
   list-style: none;
   background: transparent;
+}
+
+@media only screen and (max-width: 620px) {
+  body {
+    --primary-padding: 1em;
+  }
+  h3 {
+    font-size: 16px;
+  }
 }

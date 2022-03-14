@@ -17,7 +17,7 @@ let shoesContent = [
     price: 710,
     images: [Shoe1, Shoe1, Shoe1, Shoe1],
     highlightColor: "blue",
-    size: 650,
+    size: 50,
   },
   {
     category: "Sneakers",
@@ -25,7 +25,7 @@ let shoesContent = [
     price: 200,
     images: [Shoe2, Shoe2, Shoe2, Shoe2],
     highlightColor: "yellow",
-    size: 400,
+    size: 40,
   },
   {
     category: "Lace-Up",

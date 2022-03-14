@@ -16,13 +16,13 @@
 }
 
 .filter-sidebar__categories-dropdown {
-  padding: 2em;
+  padding: var(--primary-padding);
   /* width: 100%; */
   border-bottom: var(--primary-border);
 }
 
 .filter-sidebar__categories-list {
-  padding: 0 0 0 2em;
+  padding: 0 0 0 var(--primary-padding);
 }
 
 .filter-sidebar__categories-item {
@@ -40,7 +40,7 @@
 }
 
 .filter-sidebar__range-headline {
-  padding: 2em;
+  padding: var(--primary-padding);
   /* width: 100%; */
   border-top: var(--primary-border);
 }
@@ -50,7 +50,7 @@
   margin: auto;
   justify-self: center;
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: var(--primary-padding);
 }
 
 .filter-sidebar__range-inputs output {
@@ -69,7 +69,7 @@
 /* Shoe Size */
 
 .filter-sidebar__sizes-headline {
-  padding: 2em;
+  padding: var(--primary-padding);
   /* width: 100%; */
   border-top: var(--primary-border);
 }
@@ -77,7 +77,7 @@
 .filter-sidebar__sizes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  margin: 0 2em;
+  margin: 0 var(--primary-padding);
   gap: 1em;
 }
 

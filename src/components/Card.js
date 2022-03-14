@@ -10,10 +10,16 @@ function Card({ shoeContent }) {
         className={classes["card__title"]}
         style={{ borderColor: shoeContent.highlightColor }}
       >
-        <p className={classes["card__title-category"]}>
-          {shoeContent.category}
-        </p>
-        <p>{shoeContent.name}</p>
+        <div className={classes["card__title-container"]}>
+          <p className={classes["card__title-category"]}>
+            {shoeContent.category}
+          </p>
+          <p>{shoeContent.name}</p>
+        </div>
+        <div className={classes["card__shoe-size"]}>
+          <span>Size: </span>
+          {shoeContent.size}
+        </div>
       </div>
 
       <div className={classes["card__img-container"]}>
