@@ -132,6 +132,7 @@ function MainSection({ onSortByPriceChange }) {
         {filteredContent.map((shoeContent) => {
           return <Card shoeContent={shoeContent} />;
         })}
+        {filteredContent.length <= 0 && "No Shoe Found!"}
       </div>
     </main>
   );
