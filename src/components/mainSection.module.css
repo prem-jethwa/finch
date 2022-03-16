@@ -27,9 +27,9 @@
   gap: var(--primary-padding);
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 768px) {
   .main-section__cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   .sub-header {
     max-width: calc(100% - 2rem);

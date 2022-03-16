@@ -1,3 +1,23 @@
 .main-container {
   display: flex;
 }
+
+.main-container--filter-dropdown {
+  display: none;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  background: var(--primary-white);
+  border-radius: 0.5em;
+  border: var(--primary-border);
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .main-container--filter-dropdown {
+    display: block;
+  }
+}

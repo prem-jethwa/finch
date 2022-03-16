@@ -88,3 +88,29 @@
   padding: 0.5em;
   border-radius: 0.5em;
 }
+
+@media (max-width: 768px) {
+  .filter-sidebar {
+    flex-direction: row;
+
+    max-width: calc(100%);
+    min-height: 200px;
+  }
+  .filter-sidebar__categories {
+    max-width: 170px;
+  }
+
+  .filter-sidebar__sizes-headline,
+  .filter-sidebar__range-headline {
+    border: none;
+    border-bottom: var(--primary-border);
+    border-left: var(--primary-border);
+  }
+
+  .filter-sidebar__range-inputs {
+    margin: 1em auto;
+  }
+  .filter-sidebar__sizes-grid {
+    margin: var(--primary-padding) 0;
+  }
+}
