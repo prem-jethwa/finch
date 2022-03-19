@@ -4,7 +4,7 @@ import searchIcon from "../../assets/img/search.svg";
 function Header({ onSearchQueryChange }) {
   return (
     <header className={classes["search-header"]}>
-      <div className={classes["search-header__logo"]}>PJ</div>
+      <div className={classes["search-header__logo"]}>Finch Shoes</div>
       <div className={classes["search-header__search-box"]}>
         <img
           className={classes["search-header__search-img"]}
